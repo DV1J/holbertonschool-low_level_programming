@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/** 
- * main - Prints all single digit numbers of base 10 starting from 0,
- * followed by a new line, without using char variables.
+/**
+ * main - prints all single digit number of base 10 starting 0
+ * followed by a new line, without saving char variables
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -12,6 +12,7 @@ for (num = 0; num < 10; num++)
 {
 putchar(num + '0');
 }
-putchar('\n');
+putchar ('\n');
+
 return (0);
 }
