@@ -1,22 +1,18 @@
-#include <stdio.h>
+#includ "main.h"
 
 /**
- * print_alphabet - Prints the alphabet in lowercase followed by a new line.
- * Using putchar only twice in the whole source code (per your requirement).
+ * print_alphabet - prints the alphabet in lowercase
+ * Return: void 
  */
 void print_alphabet(void)
 {
-    char ch;
+	char c = 'a';
 
-    for (ch = 'a'; ch <= 'z'; ch++)
-    {
-        putchar(ch); // First putchar
-    }
-    putchar('\n'); // Second putchar
-}
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
 
-int main(void)
-{
-    print_alphabet();
-    return (0);
+	_putchar(\'n');
 }
