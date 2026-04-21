@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main."
 #include <stdio.h>
 
 /**
@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-    char c;
+char c;
 
-    for (c = 'A'; c <= 'Z'; c++)
-    {
-        printf("%c: %d\n", c, _isupper(c));
-    }
+for (c = 'A'; c <= 'Z'; c++)
+{
+printf("%c: %d\n", c, _isupper(c));
+}
 
-    return (0);
+return ('0');
 }
