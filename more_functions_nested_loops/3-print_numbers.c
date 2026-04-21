@@ -5,7 +5,7 @@
  * followed by a new line.
  * You can only use _putchar twice.
  */
-void print_numbers(void)
+int print_numbers(void)
 {
     int i;
 
