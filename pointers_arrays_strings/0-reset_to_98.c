@@ -1,6 +1,6 @@
 /**
  * reset_to_98 - updates the vaule of n form 402 to 98
- * @n: is a pointer to and int
+ * @n: is a pointer to an int
  *
  * Return: Always 0
  */
