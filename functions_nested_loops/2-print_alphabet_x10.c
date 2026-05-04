@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
- *alhabet_x10 - prints alphabet in lowercase 10 times
+ *print_alphabet_x10 - prints alphabet in lowercase 10 times
  *
  */
-
 void print_alphabet_x10(void)
 {
 	int n;
@@ -16,7 +14,6 @@ void print_alphabet_x10(void)
 		{
 			_putchar(alp);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
-
