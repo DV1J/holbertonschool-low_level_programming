@@ -2,14 +2,14 @@
 
 /**
  *reverse_array - reverses the content of an array of integers.
- *@a: pointer
+ *@a: string
  *@n: values
  */
 
 void reverse_array(int *a, int n)
 {
 	int i;
-	char tmp;
+	int tmp;
 
 	for (i = 0; i < n / 2; i++)
 	{
