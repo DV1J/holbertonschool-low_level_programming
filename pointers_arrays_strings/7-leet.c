@@ -14,15 +14,12 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		j = 0;
-
-		while (rep[j] != '\0')
+		for (j = 0; rep[j] != '\0'; j++)
 		{
 			if (str[i] == let[j])
 			{
 				str[i] = rep[j];
 			}
-			j++;
 		}
 		i++;
 	}
