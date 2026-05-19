@@ -1,32 +1,29 @@
 #include "main.h"
-
+#include <ctype.h>
 /**
  *main - adds positive numbers.
  *@argc: contains arguments
  *@argv: array of arguments
- *Return: i a
+ *Return: 1 || 0
  */
 int main(int argc, char *argv[])
 {
 	int i;
 	int sum = 0;
 
-	if (argc > 0)
-	{
-		for (i = 0; i < argc; i++)
-		{
-			sum = sum + atoi(argv[i]);
-		}
-		printf("%d\n", sum);
-	}
-	else if (argc == 0)
+	if (argc == 0)
 	{
 		printf("0\n");
 	}
-	else if (argc >= 'a' && argc <= 'z')
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
+		if (!isdigit(argv[i][0]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		 sum = sum + atoi(argv[i]);
 	}
-	return (0);
+		printf("%d\n", sum);
+		return (0);
 }
