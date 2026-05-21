@@ -7,20 +7,28 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i;
+	int i;
+	int j = 0;
 	char *arry;
 
 	if (str == 0)
 	{
 	return (0);
 	}
-	i = strlen(str);
+	while(str[i] != '\0')
+	{
+		i++;
+	}
 	arry = malloc((i + 1) * sizeof(char));
 	if (arry == 0)
 	{
 		return (0);
 	}
-	strcpy (arry, str);
+	while (j < i)
+	{
+		arry[j] = str[j];
+		j++;
+	}
 	return (arry);
-	free(str);
+	free(arry);
 }
