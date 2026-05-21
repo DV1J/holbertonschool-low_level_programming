@@ -29,9 +29,9 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 	}
 	arry = malloc((len1 + len2 + 1) * sizeof(char));
-	if (arry == 0)
+	if (arry == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	while (i < len1)
 	{
@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		arry[i + j] = s2[j];
 		j++;
-		arry[i + j] = '\0';
 	}
+	arry [i + j] = '\0';
 	return (arry);
 }
