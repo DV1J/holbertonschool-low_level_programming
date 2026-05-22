@@ -5,7 +5,6 @@
  *@width: width
  *@height: height
  *Return: 0 || grid
-
  */
 int **alloc_grid(int width, int height)
 {
