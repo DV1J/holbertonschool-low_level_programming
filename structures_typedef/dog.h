@@ -9,7 +9,7 @@
  *@age: int of age
  *@owner: pointer where string for owner is located
  */
-typedef struct
+typedef struct dog
 {
 	char *name;
 	float age;
