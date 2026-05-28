@@ -13,12 +13,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name == 0 || owner == 0)
 	{
-		return(0);
+		return (0);
 	}
 	newdog = malloc(sizeof(dog_t));
 	if (newdog == 0)
 		return (0);
-
 	while (name[nam_len] != '\0')
 	{
 		nam_len++;
@@ -29,7 +28,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newdog);
 		return (0);
 	}
-
 	for (i = 0; i < nam_len; i++)
 		newdog->name[i] = name[i];
 	newdog->name[i] = '\0';
