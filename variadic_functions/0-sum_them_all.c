@@ -11,9 +11,10 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 	int s = 0;
 	va_list sum;
-	va_start (sum, n);
 
-	for(i = 0; i < n; i++)
+	va_start(sum, n);
+
+	for (i = 0; i < n; i++)
 	{
 		if (n == 0)
 		{
