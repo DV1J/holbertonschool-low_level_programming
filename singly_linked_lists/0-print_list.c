@@ -2,9 +2,8 @@
 
 /**
  *print_list - prints all the elements of a list_t list.
- *@list_t:
- *@h:
- *Return: num of nodes 
+ *@h: head
+ *Return: Counter
  */
 
 size_t print_list(const list_t *h)
@@ -19,5 +18,5 @@ size_t print_list(const list_t *h)
 			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
 	}
-	return(counter);
+	return (counter);
 }
