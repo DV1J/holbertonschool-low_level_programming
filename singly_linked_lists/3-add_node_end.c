@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *add_node - adds a new node at the beginning of a list_t list
+ *add_node_end -  adds a new node at the end of a list_t list.
  *@head: head pointer
  *@str:string
  *Return: NULL || address of new element
